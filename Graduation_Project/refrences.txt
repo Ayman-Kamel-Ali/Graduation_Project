@@ -1,0 +1,10 @@
+https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
+
+
+https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
+
+
+https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
+
+
+https://data.mendeley.com/datasets/dzz48mvjht/1

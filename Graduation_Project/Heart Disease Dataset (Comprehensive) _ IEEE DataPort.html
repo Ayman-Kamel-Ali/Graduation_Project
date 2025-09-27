@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style><!----> <!--?lit$604975124$-->.osano-cm-window{font-family:Helvetica,Arial,Hiragino Sans GB,STXihei,Microsoft YaHei,WenQuanYi Micro Hei,Hind,MS Gothic,Apple SD Gothic Neo,NanumBarunGothic,sans-serif;font-size:16px;font-smooth:always;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothingz:auto;display:block;left:0;line-height:1;position:absolute;top:0;width:100%;z-index:2147483638;--fade-transition-time:700ms;--slide-transition-time:400ms}.osano-cm-window--context_amp{height:100%}.osano-visually-hidden{height:1px;left:-10000px;margin:-1px;opacity:0;overflow:hidden;position:absolute;width:1px}.osano-cm-button{border-radius:.25em;border-style:solid;border-width:thin;cursor:pointer;flex:1 1 auto;font-size:1em;font-weight:700;line-height:1;margin:.125em;min-width:6em;padding:.5em .75em;transition-duration:.2s;transition-property:background-color;transition-timing-function:ease-out}.osano-cm-button--type_icon{border-radius:50%;height:1em;line-height:0;min-width:1em;width:1em}.osano-cm-button:focus,.osano-cm-button:hover{outline:none}.osano-cm-close{border-radius:50%;border-style:solid;border-width:2px;box-sizing:content-box;cursor:pointer;height:20px;margin:.5em;min-height:20px;min-width:20px;order:0;outline:none;overflow:hidden;padding:0;width:20px;stroke-width:1px;justify-content:center;line-height:normal;text-decoration:none;transform:rotate(0deg);transition-duration:.2s;transition-property:transform,color,background-color,stroke,stroke-width;transition-timing-function:ease-out;z-index:2}.osano-cm-close:focus,.osano-cm-close:hover{transform:rotate(90deg);stroke-width:2px}.ccpa-opt-out-icon{display:flex;flex:1 1 auto}.ccpa-opt-out-icon svg{max-width:40px}.osano-cm-link{cursor:pointer;text-decoration:underline;transition-duration:.2s;transition-property:color;transition-timing-function:ease-out}.osano-cm-link:active,.osano-cm-link:hover{outline:none}.osano-cm-link:focus{font-weight:700;outline:none}.osano-cm-link--type_feature,.osano-cm-link--type_purpose,.osano-cm-link--type_specialFeature,.osano-cm-link--type_specialPurpose{cursor:help;display:block;-webkit-text-decoration:dashed;text-decoration:dashed}.osano-cm-link--type_denyAll{display:block;text-align:right}[dir=rtl] .osano-cm-link--type_denyAll{text-align:left}.osano-cm-link--type_vendor{display:block}.osano-cm-vendor-link{font-size:.75em}.osano-cm-list-item{margin:0}.osano-cm-list-item--type_term{border-top-style:solid;border-top-width:1px;font-size:.875rem;font-weight:400;margin-bottom:.25em;margin-top:.5em;padding:.5em .75rem 0;position:relative;top:-1px}.osano-cm-list-item--type_description{font-size:.75rem;font-weight:lighter;padding:0 .75rem}.osano-cm-list{list-style-position:outside;list-style-type:none;margin:0;padding:0}.osano-cm-list__list-item{text-indent:0}.osano-cm-list--type_description{margin:0 -1em}.osano-cm-list:first-of-type .osano-cm-list__list-item:first-of-type{border-top-width:0;margin-top:0;padding-top:0}.osano-cm-toggle{align-items:center;display:flex;flex-direction:row-reverse;justify-content:flex-start;margin:.25em 0;pointer-events:auto;position:relative}.osano-cm-toggle__label{margin:0 .5em 0 0}[dir=rtl] .osano-cm-toggle__label{margin:0 0 0 .5em}.osano-cm-toggle__switch{border-radius:14px;border-style:solid;border-width:2px;box-sizing:content-box;color:transparent;display:block;flex-shrink:0;height:18px;line-height:0;margin:0;position:relative;text-indent:-9999px;transition-duration:.2s;transition-property:background-color;transition-timing-function:ease-out;width:40px}.osano-cm-toggle__switch:hover{cursor:pointer}.osano-cm-toggle__switch:after{border-radius:9px;border-width:0;height:18px;left:0;top:0;width:18px}.osano-cm-toggle__switch:before{border-radius:16px;border-width:2px;bottom:-6px;box-sizing:border-box;left:-6px;right:-6px;top:-6px}.osano-cm-toggle__switch:after,.osano-cm-toggle__switch:before{border-style:solid;content:"";margin:0;position:absolute;transform:translateX(0);transition-duration:.3s;transition-property:transform,left,border-color;transition-timing-function:ease-out}.osano-cm-toggle__switch:after:active,.osano-cm-toggle__switch:before:active{transition-duration:.1s}.osano-cm-toggle__switch:after:active{width:26px}.osano-cm-toggle__switch:before:active{width:34px}[dir=rtl] .osano-cm-toggle__switch:after{left:100%;transform:translateX(-100%)}.osano-cm-toggle__input{height:1px;left:-10000px;margin:-1px;opacity:0;overflow:hidden;position:absolute;width:1px}[dir=rtl] .osano-cm-toggle__input{left:0;right:-10000px}.osano-cm-toggle__input:disabled{cursor:default}.osano-cm-toggle--type_checkbox .osano-cm-toggle__switch{border-radius:4px;border-style:solid;border-width:1px;height:22px;width:22px}.osano-cm-toggle--type_checkbox .osano-cm-toggle__switch:after{background-color:transparent!important;border-bottom-width:2px;border-left-width:2px;border-radius:0;content:none;height:6px;left:3px;top:3px;transform:rotate(-45deg);transition-property:color;transition-timing-function:ease-out;width:12px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch{border-radius:4px;border-style:solid;border-width:1px;height:22px;width:22px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:after,.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:before{background-color:transparent!important;border-bottom-width:1px;border-radius:0;border-top-width:1px;content:none;height:0;left:-3px;top:7px;transition-property:color;transition-timing-function:ease-out;width:12px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:after{transform:translate(50%,50%) rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:before{transform:translate(50%,50%) rotate(45deg)}.osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{left:100%;transform:translateX(-100%)}[dir=rtl] .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{left:0;transform:translateX(0)}.osano-cm-toggle__input:disabled+.osano-cm-toggle__switch{cursor:default}.osano-cm-toggle--type_checkbox .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{content:"";left:3px;top:3px;transform:rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after,.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:before{content:"";left:-1px;top:9px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{transform:translate(50%,50%) rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:before{transform:translate(50%,50%) rotate(45deg)}.osano-cm-toggle--type_checkbox .osano-cm-toggle__input:disabled+.osano-cm-toggle__switch,.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:disabled+.osano-cm-toggle__switch{opacity:.3}.osano-cm-widget{background:none;border:none;bottom:12px;cursor:pointer;height:40px;opacity:.9;outline:none;padding:0;position:fixed;transition:transform .1s linear 0s,opacity .2s linear 0ms,visibility 0ms linear 0ms;visibility:visible;width:40px;z-index:2147483636}.osano-cm-widget--position_right{right:12px}.osano-cm-widget--position_left{left:12px}.osano-cm-widget:focus{outline:solid;outline-offset:.2rem}.osano-cm-widget:focus,.osano-cm-widget:hover{opacity:1;transform:scale(1.1)}.osano-cm-widget--hidden{opacity:0;visibility:hidden}.osano-cm-widget--hidden:focus,.osano-cm-widget--hidden:hover{opacity:0;transform:scale(1)}.osano-cm-dialog{align-items:center;box-sizing:border-box;font-size:1em;line-height:1.25;overflow:auto;padding:1.5em;position:fixed;transition-delay:0ms,0ms;transition-duration:.7s,0ms;transition-property:opacity,visibility;visibility:visible;z-index:2147483637}.osano-cm-dialog--hidden{opacity:0;transition-delay:0ms,.7s;visibility:hidden}.osano-cm-dialog--type_bar{box-sizing:border-box;display:flex;flex-direction:column;left:0;right:0}.osano-cm-dialog--type_bar .osano-cm-button{flex:none;margin:.125em auto;width:80%}@media screen and (min-width:768px){.osano-cm-dialog--type_bar{flex-direction:row}.osano-cm-dialog--type_bar .osano-cm-button{flex:1 1 100%;margin:.25em .5em;width:auto}}.osano-cm-dialog--type_box{flex-direction:column;max-height:calc(100vh - 2em);max-width:20em;width:calc(100vw - 2em)}.osano-cm-dialog__close{position:absolute;right:0;top:0}.osano-cm-dialog__list{margin:.5em 0 0;padding:0}.osano-cm-dialog__list .osano-cm-item{display:flex;margin-top:0}.osano-cm-dialog__list .osano-cm-item:last-child{margin-bottom:0}.osano-cm-dialog__list .osano-cm-toggle{flex-direction:row}[dir=rtl] .osano-cm-dialog__list .osano-cm-toggle{flex-direction:row-reverse}.osano-cm-dialog__list .osano-cm-label{white-space:nowrap}[dir=ltr] .osano-cm-dialog__list .osano-cm-label{margin-left:.375em}[dir=rtl] .osano-cm-dialog__list .osano-cm-label{margin-right:.375em}.osano-cm-dialog__buttons{display:flex;flex-wrap:wrap}.osano-cm-dialog--type_bar .osano-cm-dialog__content{flex:5;margin-bottom:.25em;width:100%}.osano-cm-dialog--type_box .osano-cm-dialog__content{display:flex;flex-direction:column;flex-grow:.0001;transition:flex-grow 1s linear}.osano-cm-dialog--type_bar .osano-cm-dialog__list{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;margin:.75em auto}@media screen and (min-width:376px){.osano-cm-dialog--type_bar .osano-cm-dialog__list{flex-direction:row}}@media screen and (min-width:768px){.osano-cm-dialog--type_bar .osano-cm-dialog__list{margin:.5em 0 0 auto}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__list{margin:.5em auto 0 0}}[dir=ltr] .osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-item{margin-right:.5em}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-item{margin-left:.5em}.osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-label{padding-top:0}.osano-cm-dialog--type_bar .osano-cm-dialog__buttons{flex:1;justify-content:flex-end;margin:0;width:100%}@media screen and (min-width:768px){.osano-cm-dialog--type_bar .osano-cm-dialog__buttons{margin:0 0 0 .5em;max-width:30vw;min-width:16em;position:sticky;top:0;width:auto}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__buttons{margin:0 .5em 0 0}}.osano-cm-dialog--type_box .osano-cm-dialog__buttons{margin:.5em 0 0}.osano-cm-dialog--type_bar.osano-cm-dialog--position_top{top:0}.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom{bottom:0}.osano-cm-dialog--type_box.osano-cm-dialog--position_top-left{left:1em;top:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_top-right{right:1em;top:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_bottom-left{bottom:1em;left:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_bottom-right{bottom:1em;right:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_center{left:50%;top:50%;transform:translate(-50%,-50%)}.osano-cm-dialog--type_box.osano-cm-dialog--wide{max-width:50em}@media screen and (max-height:800px)and (max-width:1200px){.osano-cm-dialog--type_box.osano-cm-dialog--wide{max-width:calc(100vw - 4em)}}.osano-cm-dialog--type_box.osano-cm-dialog--wide .osano-cm-dialog__list{display:flex;flex-wrap:wrap}.osano-cm-dialog--context_amp{height:100%;position:relative}.osano-cm-content__message{margin-bottom:1em;word-break:break-word}.osano-cm-drawer-links{margin:.5em 0 0}.osano-cm-drawer-links__link{display:block}.osano-cm-storage-policy{display:inline-block}.osano-cm-usage-list{margin:0 0 .5em}.osano-cm-usage-list__list{list-style-position:inside;list-style-type:disc}:export{fadeTransitionTime:.7s;slideTransitionTime:.4s}.osano-cm-info-dialog{height:100vh;left:0;position:fixed;top:0;transition-delay:0ms,0ms;transition-duration:.2s,0ms;transition-property:opacity,visibility;visibility:visible;width:100vw;z-index:2147483638}.osano-cm-info-dialog--hidden{opacity:0;transition-delay:0ms,.2s;visibility:hidden}.osano-cm-header{margin:0 0 -1em;padding:1em 0;position:sticky;top:0;z-index:1}.osano-cm-info{animation:delay-overflow .4s;bottom:0;box-shadow:0 0 2px 2px #ccc;box-sizing:border-box;max-width:20em;overflow:visible visible;position:fixed;top:0;transition-duration:.4s;transition-property:transform;width:100%}.osano-cm-info--position_left{left:0;transform:translate(-100%)}.osano-cm-info--position_right{right:0;transform:translate(100%)}.osano-cm-info--open{animation:none;overflow:hidden auto;transform:translate(0)}.osano-cm-info--do_not_sell{animation:none;height:-moz-fit-content;height:fit-content;left:50%;position:fixed;right:auto;top:50%;transform:translate(-50%,-50%);transition:none}.osano-cm-info--do_not_sell .osano-cm-close{order:-1}.osano-cm-info--do_not_sell .osano-cm-header{box-sizing:content-box;display:block;flex:none}.osano-cm-info-views{align-items:flex-start;display:flex;flex-direction:row;flex-wrap:nowrap;height:100%;transition-duration:.4s;transition-property:transform;width:100%}[dir=rtl] .osano-cm-info-views{flex-direction:row-reverse}.osano-cm-info-views__view{box-sizing:border-box;flex-shrink:0;width:100%}.osano-cm-info-views--position_0>:not(:first-of-type){max-height:100%;overflow:hidden}.osano-cm-info-views--position_1{transform:translateX(-100%)}.osano-cm-info-views--position_1>:not(:nth-of-type(2)){max-height:100%;overflow:hidden}.osano-cm-info-views--position_2{transform:translateX(-200%)}.osano-cm-info-views--position_2>:not(:nth-of-type(3)){max-height:100%;overflow:hidden}.osano-cm-info--do_not_sell .osano-cm-info-views{height:-moz-fit-content;height:fit-content}.osano-cm-view{height:0;padding:0 .75em 1em;transition-delay:.4s;transition-duration:0ms;transition-property:height,visibility;visibility:hidden;width:100%}.osano-cm-view__button{font-size:.875em;margin:1em 0 0;width:100%}.osano-cm-view--active{height:auto;transition-delay:0ms;visibility:visible}.osano-cm-description{font-size:.75em;font-weight:300;line-height:1.375;margin:1em 0 0}.osano-cm-description:first-child{margin:0}.osano-cm-description:last-of-type{margin-bottom:1em}.osano-cm-drawer-toggle .osano-cm-label{font-size:.875em;line-height:1.375em;margin:0 auto 0 0}[dir=rtl] .osano-cm-drawer-toggle .osano-cm-label{margin:0 0 0 auto}.osano-cm-info-dialog-header{align-items:center;display:flex;flex-direction:row-reverse;left:auto;min-height:3.25em;position:sticky;top:0;width:100%;z-index:1}[dir=rtl] .osano-cm-info-dialog-header{flex-direction:row}.osano-cm-info-dialog-header__header{align-items:center;display:flex;flex:1 1 auto;font-size:1em;justify-content:flex-start;margin:0;order:1;padding:1em .75em}.osano-cm-info-dialog-header__description{font-size:.75em;line-height:1.375}.osano-cm-back,.osano-cm-info-dialog-header__close{position:relative}.osano-cm-back{flex:0 1 auto;margin:0 0 0 .5em;min-width:0;order:2;width:auto;z-index:2}[dir=rtl] .osano-cm-back{margin:0 .5em 0 0}.osano-cm-powered-by{align-items:center;display:flex;flex-direction:column;font-weight:700;justify-content:center;margin:1em 0}.osano-cm-powered-by__link{font-size:.625em;outline:none;text-decoration:none}.osano-cm-powered-by__link:focus,.osano-cm-powered-by__link:hover{text-decoration:underline}@keyframes delay-overflow{0%{overflow:hidden auto}}.osano-cm-drawer-iab-button-container{display:flex;gap:.5em;justify-content:center;margin-bottom:2em}.osano-cm-illustrations__list>.osano-cm-list-item--type_description{padding:.2rem 1rem}.osano-cm-drawer-item.osano-cm-description__list li{padding-top:.75em}.osano-cm-tcf-purpose--label{border-bottom:1px solid rgba(0,0,0,.1);display:block;margin-bottom:.5em;padding:.25em 0 .5em}.osano-cm-link.osano-cm-link--type_purpose{font-weight:400}.osano-cm-tcf-purpose--label input{float:right;margin-right:.5em}.osano-cm-expansion-panel{border-bottom:1px solid rgba(0,0,0,.1);display:block;font-size:.75em;margin:0 -1.5em 1em;padding:1.5em 1.5em 0}.osano-cm-expansion-panel--expanded{border-bottom:none}.osano-cm-expansion-panel--empty,.osano-cm-expansion-panel--empty:not([open]){border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:0}.osano-cm-expansion-panel__body{background-color:rgba(0,0,0,.1);line-height:1.25;list-style:none;margin:0 -1.5em;max-height:0;overflow:hidden;padding:0 1.5em;transition-delay:0ms,0ms,0ms,.3s;transition-duration:.3s,.3s,.3s,0s;transition-property:max-height,padding-top,padding-bottom,visibility;transition-timing-function:ease-out;visibility:hidden}.osano-cm-expansion-panel__toggle{cursor:pointer;display:block;line-height:1.25;margin:0 auto 1em 0;outline:none;position:relative}.osano-cm-expansion-panel__toggle:active,.osano-cm-expansion-panel__toggle:focus,.osano-cm-expansion-panel__toggle:hover{outline:none}[dir=rtl] .osano-cm-expansion-panel__toggle{margin:0 0 1em auto}.osano-cm-expansion-panel--expanded .osano-cm-expansion-panel__body{max-height:none;padding:1.25em 1.5em 1em;transition-delay:0ms,0ms,0ms,0ms;visibility:visible}.osano-cm-cookie-disclosure__title,.osano-cm-script-disclosure__title{border:0;clear:both;display:block;flex:0 1 30%;font-size:1em;font-weight:700;line-height:1.375;margin:0 0 .5em;padding:0}.osano-cm-cookie-disclosure__description,.osano-cm-script-disclosure__description{flex:0 1 70%;font-size:1em;line-height:1.375;margin:0 0 .5em;padding:0}.osano-cm-disclosure{border-bottom:none;display:block;font-size:.75em;margin:0 -1.5em 1em;padding:1.5em 1.5em 0}.osano-cm-disclosure--collapse{border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:1em}.osano-cm-disclosure--empty,.osano-cm-disclosure--empty:not([open]){border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:0}.osano-cm-disclosure__list{background-color:rgba(0,0,0,.1);line-height:1.25;list-style:none;margin:0 -1.5em;padding:1.25em 1.5em 1em}.osano-cm-disclosure__list:empty{border:none;padding:0 1.5em}.osano-cm-disclosure__list:first-of-type{margin-top:1em;padding:1.25em 1.5em 1em}.osano-cm-disclosure__list:first-of-type:empty{padding:1.75em 1.5em .75em}.osano-cm-disclosure__list:not(:first-of-type):not(:empty){border-top:1px solid rgba(0,0,0,.1)}.osano-cm-disclosure__list:empty+.osano-cm-disclosure__list:not(:empty){border:none;padding:0 1.5em}.osano-cm-disclosure__list:not(:empty)~.osano-cm-disclosure__list:empty+.osano-cm-disclosure__list:not(:empty){border-top:1px solid rgba(0,0,0,.1)}.osano-cm-disclosure__list>.osano-cm-list-item{line-height:1.25}.osano-cm-disclosure__list>.osano-cm-list-item:not(:first-of-type){border-top:1px solid rgba(0,0,0,.1);margin:1em -1.25em 0;padding:1em 1.25em 0}.osano-cm-disclosure__toggle{cursor:pointer;display:block;font-weight:700;line-height:1.25;margin:0 auto 0 0;outline:none;position:relative}.osano-cm-disclosure__toggle:focus,.osano-cm-disclosure__toggle:hover{text-decoration:underline}[dir=rtl] .osano-cm-disclosure__toggle{margin:0 0 0 auto}.osano-cm-disclosure--loading .osano-cm-disclosure__list{height:0;line-height:0;max-height:0}.osano-cm-disclosure--loading .osano-cm-disclosure__list>*{display:none}.osano-cm-disclosure--loading .osano-cm-disclosure__list:after{animation-duration:1s;animation-iteration-count:infinite;animation-name:osano-load-scale;animation-timing-function:ease-in-out;border-radius:100%;content:"";display:block;height:1em;position:relative;top:-.125em;transform:translateY(-50%);width:1em}.osano-cm-disclosure--collapse .osano-cm-disclosure__list{display:none}.osano-cm-disclosure--collapse .osano-cm-disclosure__list:after{content:none}.osano-cm-cookie-disclosure,.osano-cm-script-disclosure{display:flex;flex-wrap:wrap;margin:0}.osano-cm-cookie-disclosure__description:last-of-type,.osano-cm-cookie-disclosure__title:last-of-type,.osano-cm-script-disclosure__description:last-of-type,.osano-cm-script-disclosure__title:last-of-type{margin-bottom:0}@keyframes osano-load-scale{0%{transform:translateY(-50%) scale(0)}to{opacity:0;transform:translateY(-50%) scale(1)}} .osano-cm-window { direction: <!--?lit$604975124$-->ltr; text-align: <!--?lit$604975124$-->left; } .osano-cm-dialog { background: <!--?lit$604975124$-->#e6e7e7; color: <!--?lit$604975124$-->#000000; } .osano-cm-dialog__close { color: <!--?lit$604975124$-->#000000; stroke: <!--?lit$604975124$-->#000000; } .osano-cm-dialog__close:focus { background-color: <!--?lit$604975124$-->#000000; border-color: <!--?lit$604975124$-->#000000; stroke: <!--?lit$604975124$-->#e6e7e7; } .osano-cm-dialog__close:hover { stroke: <!--?lit$604975124$-->#141414; } .osano-cm-dialog__close:focus:hover { stroke: <!--?lit$604975124$-->#d2d3d3; } .osano-cm-info-dialog { background: <!--?lit$604975124$-->rgba(0,0,0,0.45); } .osano-cm-header, .osano-cm-info-dialog-header { background: <!--?lit$604975124$-->#fff; background: linear-gradient( 180deg, <!--?lit$604975124$-->#fff 2.5em, <!--?lit$604975124$-->rgba(255,255,255,0) 100% ); } .osano-cm-info { background: <!--?lit$604975124$-->#fff; color: <!--?lit$604975124$-->#000; } .osano-cm-link-separator::before { content: '|'; padding: 0 0.5em; } .osano-cm-close { display: flex; background-color: transparent; border-color: transparent; } .osano-cm-info-dialog-header__close { color: <!--?lit$604975124$-->#000; stroke: <!--?lit$604975124$-->#000; } .osano-cm-info-dialog-header__close:focus { background-color: <!--?lit$604975124$-->#000; border-color: <!--?lit$604975124$-->#000; stroke: <!--?lit$604975124$-->#fff; } .osano-cm-info-dialog-header__close:hover { stroke: <!--?lit$604975124$-->#141414; } .osano-cm-info-dialog-header__close:focus:hover { stroke: <!--?lit$604975124$-->#ebebeb; } .osano-cm-disclosure__list:first-of-type::after { background-color: <!--?lit$604975124$-->#006699; } .osano-cm-disclosure__toggle, .osano-cm-expansion-panel__toggle { color: <!--?lit$604975124$-->#006699; } .osano-cm-disclosure__toggle:hover, .osano-cm-disclosure__toggle:active, .osano-cm-expansion-panel__toggle:hover, .osano-cm-expansion-panel__toggle:active { color: <!--?lit$604975124$-->#006699; } .osano-cm-disclosure__toggle:focus, .osano-cm-expansion-panel__toggle:focus { color: <!--?lit$604975124$-->#147aad; } .osano-cm-button { background-color: <!--?lit$604975124$-->#006699; border-color: <!--?lit$604975124$-->#ffffff; color: <!--?lit$604975124$-->#ffffff; } .osano-cm-button--type_deny { background-color: <!--?lit$604975124$-->#00629b; border-color: <!--?lit$604975124$-->#ffffff; color: <!--?lit$604975124$-->#ffffff; } .osano-cm-button:focus, .osano-cm-button:hover { background-color: <!--?lit$604975124$-->#147aad; } .osano-cm-button--type_deny:focus, .osano-cm-button--type_deny:hover { background-color: <!--?lit$604975124$-->#1476af; } .osano-cm-link { color: <!--?lit$604975124$-->#006699; } .osano-cm-link:hover, .osano-cm-link:active { color: <!--?lit$604975124$-->#006699; } .osano-cm-link:focus { color: <!--?lit$604975124$-->#147aad; } .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#e6e7e7; } .osano-cm-toggle__switch::after { background-color: <!--?lit$604975124$-->#ffffff; border-color: <!--?lit$604975124$-->#ffffff; } .osano-cm-toggle__switch::before { border-color: transparent; } .osano-cm-toggle__input:checked + .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#006699; border-color: <!--?lit$604975124$-->#006699; } .osano-cm-toggle__input:checked + .osano-cm-toggle__switch::after, .osano-cm-toggle__input:checked + .osano-cm-toggle__switch::before { border-color: <!--?lit$604975124$-->#ffffff; } .osano-cm-toggle__input:focus + .osano-cm-toggle__switch, .osano-cm-toggle__input:hover + .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#d2d3d3; border-color: <!--?lit$604975124$-->#d2d3d3; } .osano-cm-toggle__input:focus + .osano-cm-toggle__switch::before { border-color: <!--?lit$604975124$-->#d2d3d3; } .osano-cm-toggle__input:checked:focus + .osano-cm-toggle__switch, .osano-cm-toggle__input:checked:hover + .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#147aad; border-color: <!--?lit$604975124$-->#147aad; } .osano-cm-toggle__input:checked:focus + .osano-cm-toggle__switch::before { border-color: <!--?lit$604975124$-->#147aad; } .osano-cm-toggle__input:disabled + .osano-cm-toggle__switch, .osano-cm-toggle__input:disabled:focus + .osano-cm-toggle__switch, .osano-cm-toggle__input:disabled:hover + .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#a6a7a7; border-color: <!--?lit$604975124$-->#a6a7a7; } .osano-cm-toggle__input:disabled + .osano-cm-toggle__switch::after, .osano-cm-toggle__input:disabled:focus + .osano-cm-toggle__switch::after, .osano-cm-toggle__input:disabled:hover + .osano-cm-toggle__switch::after { background-color: <!--?lit$604975124$-->#bfbfbf; border-color: <!--?lit$604975124$-->#bfbfbf; } .osano-cm-toggle__input:disabled + .osano-cm-toggle__switch::before, .osano-cm-toggle__input:disabled:focus + .osano-cm-toggle__switch::before, .osano-cm-toggle__input:disabled:hover + .osano-cm-toggle__switch::before { border-color: transparent; } .osano-cm-toggle__input:disabled:checked + .osano-cm-toggle__switch, .osano-cm-toggle__input:disabled:checked:focus + .osano-cm-toggle__switch, .osano-cm-toggle__input:disabled:checked:hover + .osano-cm-toggle__switch { background-color: <!--?lit$604975124$-->#40a6d9; border-color: <!--?lit$604975124$-->#40a6d9; } .osano-cm-toggle__input:disabled:checked + .osano-cm-toggle__switch::after, .osano-cm-toggle__input:disabled:checked:focus + .osano-cm-toggle__switch::after, .osano-cm-toggle__input:disabled:checked:hover + .osano-cm-toggle__switch::after { background-color: <!--?lit$604975124$-->#bfbfbf; border-color: <!--?lit$604975124$-->#bfbfbf; } .osano-cm-toggle__input:disabled:checked + .osano-cm-toggle__switch::before, .osano-cm-toggle__input:disabled:checked:focus + .osano-cm-toggle__switch::before, .osano-cm-toggle__input:disabled:checked:hover + .osano-cm-toggle__switch::before { border-color: transparent; } .osano-cm-widget__outline { fill: <!--?lit$604975124$-->#fff; stroke: <!--?lit$604975124$-->#29246a; } .osano-cm-widget__dot { fill: <!--?lit$604975124$-->#37cd8f; } .osano-cm-tcf-purpose--label input { accent-color: <!--?lit$604975124$-->#006699; } </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="S-ejBR-U9Pd1wi7czeZ8I0pH6HWBMtWQq1zIbPoeyBY">
+	<script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/collectedforms.js.download" type="text/javascript" id="CollectedForms-46222716" crossorigin="anonymous" data-leadin-portal-id="46222716" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="46222716" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/banner.js.download" type="text/javascript" id="cookieBanner-46222716" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="46222716" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/46222716.js.download" type="text/javascript" id="hs-analytics"></script><script async="" type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js"></script><script async="" type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/linkid.js.download"></script><script async="" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/analytics.js.download"></script><script async="" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/gtm.js.download"></script><script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/osano.js.download"></script>
+	<link rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/ieee-cookie-banner.css" type="text/css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NSLFHWSR');</script>
+	<!-- End Google Tag Manager -->	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css2" rel="stylesheet">
+    
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Dataset",
+            "name": "Heart Disease Dataset (Comprehensive)",
+            "description": "This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong Beach VAStatlog (Heart) Data Set.This dataset consists of 1190 instances with 11 features. These datasets were collected and combined at one place to help advance research on CAD-related machine learning and data mining algorithms, and hopefully to ultimately advance clinical diagnosis and early treatment.",
+            "creator": {
+                "@type": "Person",
+                "@id": "https://orcid.org/0000-0002-3908-3152",
+                "name": "Manu Siddhartha",
+                "url": "https://orcid.org/0000-0002-3908-3152"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "@id": "https://doi.org/10.17616/R3H77H",
+                "name": "IEEE Dataport",
+                "url": "https://ieee-dataport.org",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://ieee-dataport.org/sites/all/themes/dataport/images/dataport-logo.svg"
+                }
+            },
+            "identifier": "https://dx.doi.org/10.21227/dz4t-cm36",
+            "citation": "https://dx.doi.org/10.21227/dz4t-cm36",
+            "isAccessibleForFree": "True",
+            "keywords": "Machine Learning, Health, Biomedical and Health Sciences",
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive"
+        }
+    ]
+}</script>
+<meta name="description" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong">
+<meta name="abstract" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong Beach VAStatlog (Heart) Data Set.This dataset consists of 1190 instances with 11 features.">
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+<link rel="canonical" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive">
+<link rel="shortlink" href="https://ieee-dataport.org/node/3141">
+<meta property="og:site_name" content="IEEE DataPort">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Heart Disease Dataset (Comprehensive)">
+<meta property="og:url" content="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive">
+<meta property="og:description" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong Beach VAStatlog (Heart) Data Set.This dataset consists of 1190 instances with 11 features.">
+<meta property="og:updated_time" content="2020-11-06T04:17:38-05:00">
+<meta property="og:see_also" content="10.21227/dz4t-cm36">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive">
+<meta name="twitter:title" content="Heart Disease Dataset (Comprehensive)">
+<meta name="twitter:description" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11">
+<meta property="article:published_time" content="2020-11-05T13:25:49-05:00">
+<meta property="article:modified_time" content="2020-11-06T04:17:38-05:00">
+<meta itemprop="name" content="Heart Disease Dataset (Comprehensive)">
+<meta itemprop="description" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong Beach VAStatlog (Heart) Data Set.This dataset consists of 1190 instances with 11 features.">
+<link rel="publisher" href="https://ieee-dataport.org/open-access/ieee-dataport.org">
+<meta name="dcterms.title" content="Heart Disease Dataset (Comprehensive)">
+<meta name="dcterms.creator" content="MANU SIDDHARTHA">
+<meta name="dcterms.subject" content="Machine Learning, Health, Biomedical and Health Sciences">
+<meta name="dcterms.description" content="This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:ClevelandHungarianSwitzerlandLong Beach VAStatlog (Heart) Data Set.This dataset consists of 1190 instances with 11 features.">
+<meta name="dcterms.publisher" content="IEEE">
+<meta name="dcterms.date" content="2020-11-05T13:25-05:00">
+<meta name="dcterms.type" content="Dataset">
+<meta name="dcterms.format" content="text/html">
+<meta name="dcterms.identifier" content="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive">
+<meta name="dcterms.rights" content="Creative Commons Attribution">
+	<title>Heart Disease Dataset (Comprehensive) | IEEE DataPort</title>
+  <link type="text/css" rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css_Joa-1Kr1IFbM6VsQ_CorqcMdxJRytkagVMUX1z9DYnQ.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css_wH1VX2kKWfznUMt7Oqa21a6tkSYt2jtgi4qtK-Gaj54.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css_w-kvv5fcR4TInd_enmgMb5lWgg-94SgaY0rdOaRxAuE.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/css_fVwWG6yxLfDlHVbuaZTtq4ZEGmJrPhtmqc-XSVnnz6E.css" media="all">
+  <script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/jquery.min.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.12/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_GOikDsJOX04Aww72M-XK1hkq4qiL_1XgGsRdkL0XlDo.js.download"></script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/jquery-ui.min.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_x7qNkJa-DNwosveDXWF058JG-3exlnEFNBBYr9iuYE0.js.download"></script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_ndkkzyb5grcIrgrfytoCesJ-oa89MUkNs4fjcNDty1o.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-80987979-1", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_ZBn0dkgWSOdS18JlYEkU_470Eo5s6M4EOJ7OTcdfssA.js.download"></script>
+<script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_NvfZ2uFXzs5w2KHtazpbJw7T-fmK1izEcV2N7Mb3Fbo.js.download"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"dataport","theme_token":"aztTPXLsK1mGzwXQJZy3Gb9nL-hA61kedN4pFbA7aV8","jquery_version":"1.12","jquery_version_token":"T94r7hg_qYoIJYkTvlh9vK3QdHm5P6_KfNdGQwTPvEI","js":{"modules\/statistics\/statistics.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.12.4\/jquery.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_browser.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"1":1,"misc\/ui\/jquery.ui.position-1.13.0-backport.js":1,"misc\/ui\/jquery.ui.dialog-1.13.0-backport.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"misc\/form-single-submit.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/formtips\/hoverintent.minified.js":1,"sites\/all\/modules\/formtips\/formtips.js":1,"sites\/all\/modules\/iframe\/iframe.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/modules\/fivestar\/js\/fivestar.js":1,"misc\/tableheader.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/dataport\/js\/core.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.tooltip.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/video_filter\/video_filter.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/formtips\/formtips.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/fivestar\/css\/fivestar.css":1,"sites\/all\/modules\/fivestar\/widgets\/basic\/basic.css":1,"sites\/all\/themes\/dataport\/css\/styles.css":1}},"formtips":{"selectors":[" .webform-client-form-4663",".field-name-field-collection-request .description",".field-name-field-institution-name-short- .description",".form-item-field-data-sanitization-method-und-0-value .description",".field-name-field-privacy  .description"],"interval":"200","sensitivity":"5","timeout":"2000","max_width":"500px","trigger_action":"hover"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:7108c894ec47bfb73340f5fcf753d0e8":{"view_name":"related_analysis","view_display_id":"block_1","view_args":"3141","view_path":"node\/3141","view_base_path":"competition\/analysis\/export","view_dom_id":"7108c894ec47bfb73340f5fcf753d0e8","pager_element":0},"views_dom_id:7affd7c068d56ce63f782ebd1de850c2":{"view_name":"related_analysis","view_display_id":"block","view_args":"3141","view_path":"node\/3141","view_base_path":"competition\/analysis\/export","view_dom_id":"7affd7c068d56ce63f782ebd1de850c2","pager_element":0},"views_dom_id:c83311822f76d8b13244053f6a418ee9":{"view_name":"related_analysis","view_display_id":"block_3","view_args":"3141","view_path":"node\/3141","view_base_path":"competition\/analysis\/export","view_dom_id":"c83311822f76d8b13244053f6a418ee9","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true,"\/open-access\/heart-disease-dataset-comprehensive":true},"better_exposed_filters":{"views":{"related_analysis":{"displays":{"block_1":{"filters":[]},"block":{"filters":[]},"block_3":{"filters":[]}}}}},"statistics":{"data":{"nid":"3141"},"url":"\/modules\/statistics\/statistics.php"}});
+//--><!]]>
+</script>
+ <link rel="stylesheet" href="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script async="" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/boomerang.min.js.download"></script><script async="true" type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/script.js.download"></script><script async="true" type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/pixel.js.download"></script><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(1)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(2)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(3)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(4)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(5)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(6)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(7)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(8)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(9)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(10)" border="0" alt=""><img width="0" height="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/crumb(11)" border="0" alt=""></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3141 node-type-open-access  form-single-submit-processed lightbox-processed" style=""><div data-nosnippet="" class="osano-cm-window" dir="ltr"><!----> <!--?lit$604975124$--><div hidden="" class="osano-visually-hidden"> <span id="osano-cm-aria.newWindow"><!--?lit$604975124$-->Opens in a new window</span> <span id="osano-cm-aria.external"><!--?lit$604975124$-->Opens an external website</span> <span id="osano-cm-aria.externalNewWindow"><!--?lit$604975124$-->Opens an external website in a new window</span> </div> <!--?lit$604975124$--> <div role="dialog" id="cddf2415-05e9-49fa-8927-d09bb14cc0ba" aria-label="Cookie Consent Banner" aria-describedby="cddf2415-05e9-49fa-8927-d09bb14cc0ba__label" class=" osano-cm-window__dialog osano-cm-dialog osano-cm-dialog--hidden osano-cm-dialog--position_bottom osano-cm-dialog--type_bar "> <!--?lit$604975124$--> <button class=" osano-cm-dialog__close osano-cm-close "> <!--?lit$604975124$--><svg width="20px" height="20px" viewBox="0 0 20 20" role="img" aria-labelledby="285b0f5b-dbef-4ff1-98a9-89351e8762e5"> <title id="285b0f5b-dbef-4ff1-98a9-89351e8762e5"><!---->Close this dialog<!----></title> <line role="presentation" x1="2" y1="2" x2="18" y2="18"></line> <line role="presentation" x1="2" y1="18" x2="18" y2="2"></line> </svg> </button>  <div class=" osano-cm-dialog__content osano-cm-content "> <!--?lit$604975124$--> <span id="cddf2415-05e9-49fa-8927-d09bb14cc0ba__label" class=" osano-cm-content__message osano-cm-message "> <!--?lit$604975124$-->This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. <!--?lit$604975124$-->To learn more, view the following link: <!--?lit$604975124$--> </span>  <!--?lit$604975124$--> <!--?lit$604975124$--><!--?lit$604975124$--><a rel="noopener" tabindex="0" href="https://www.ieee.org/security-privacy.html" target="_blank" class=" osano-cm-storage-policy osano-cm-content__link osano-cm-link " aria-describedby="osano-cm-aria.newWindow" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><!--?lit$604975124$-->Privacy Policy</a><!--?--><!--?lit$604975124$--> <!--?lit$604975124$--> <!--?lit$604975124$--> </div> <!--?lit$604975124$--><div class=" osano-cm-dialog__buttons osano-cm-buttons osano-cm-buttons--disabled "> <!--?lit$604975124$--><!--?lit$604975124$--><button class=" osano-cm-manage osano-cm-buttons__button osano-cm-button osano-cm-button--type_manage " tabindex="0"> <!--?lit$604975124$-->Manage Preferences </button><!--?--> </div> </div>  <!--?lit$604975124$--> <button id="03283990-c4e2-46f8-9f34-21057d0d4b02" class="osano-cm-window__widget osano-cm-widget osano-cm-widget--position_left" title="Cookie Preferences" aria-label="Cookie Preferences"> <svg role="img" width="40" height="40" viewBox="0 0 71.85 72.23" xmlns="http://www.w3.org/2000/svg" aria-labelledby="03283990-c4e2-46f8-9f34-21057d0d4b02"> <path d="m67.6 36.73a6.26 6.26 0 0 1 -3.2-2.8 5.86 5.86 0 0 0 -5.2-3.1h-.3a11 11 0 0 1 -11.4-9.5 6 6 0 0 1 -.1-1.4 9.2 9.2 0 0 1 .4-2.9 8.65 8.65 0 0 0 .2-1.6 5.38 5.38 0 0 0 -1.9-4.3 7.3 7.3 0 0 1 -2.5-5.5 3.91 3.91 0 0 0 -3.5-3.9 36.46 36.46 0 0 0 -15 1.5 33.14 33.14 0 0 0 -22.1 22.7 35.62 35.62 0 0 0 -1.5 10.2 34.07 34.07 0 0 0 4.8 17.6.75.75 0 0 0 .07.12c.11.17 1.22 1.39 2.68 3-.36.47 5.18 6.16 5.65 6.52a34.62 34.62 0 0 0 55.6-21.9 4.38 4.38 0 0 0 -2.7-4.74z" stroke-width="3" class=" osano-cm-widget__outline osano-cm-outline "></path> <path d="m68 41.13a32.37 32.37 0 0 1 -52 20.5l-2-1.56c-2.5-3.28-5.62-7.15-5.81-7.44a32 32 0 0 1 -4.5-16.5 34.3 34.3 0 0 1 1.4-9.6 30.56 30.56 0 0 1 20.61-21.13 33.51 33.51 0 0 1 14.1-1.4 1.83 1.83 0 0 1 1.6 1.8 9.38 9.38 0 0 0 3.3 7.1 3.36 3.36 0 0 1 1.2 2.6 3.37 3.37 0 0 1 -.1 1 12.66 12.66 0 0 0 -.5 3.4 9.65 9.65 0 0 0 .1 1.7 13 13 0 0 0 10.5 11.2 16.05 16.05 0 0 0 3.1.2 3.84 3.84 0 0 1 3.5 2 10 10 0 0 0 4.1 3.83 2 2 0 0 1 1.4 2z" stroke-width="3" class=" osano-cm-widget__outline osano-cm-outline "></path> <g class=" osano-cm-widget__dot osano-cm-dot "> <path d="m26.6 31.43a5.4 5.4 0 1 1 5.4-5.43 5.38 5.38 0 0 1 -5.33 5.43z"></path> <path d="m25.2 53.13a5.4 5.4 0 1 1 5.4-5.4 5.44 5.44 0 0 1 -5.4 5.4z"></path> <path d="m47.9 52.33a5.4 5.4 0 1 1 5.4-5.4 5.32 5.32 0 0 1 -5.24 5.4z"></path> </g> </svg> </button>  <!--?lit$604975124$--><div role="dialog" aria-modal="true" id="a0b9b097-4f58-4d12-b033-d68015aebcde" aria-labelledby="a0b9b097-4f58-4d12-b033-d68015aebcde__label" aria-hidden="true" class=" osano-cm-window__info-dialog osano-cm-info-dialog osano-cm-info-dialog--hidden "> <!--?lit$604975124$--><!--?lit$604975124$--><span tabindex="0" aria-hidden="true" data-focus="first"></span><!--?--> <div role="presentation" class=" osano-cm-info-dialog__info osano-cm-info osano-cm-info--position_left "> <!--?lit$604975124$--><div role="presentation" class=" osano-cm-info__info-dialog-header osano-cm-info-dialog-header "> <p role="heading" aria-level="1" id="a0b9b097-4f58-4d12-b033-d68015aebcde__label" class=" osano-cm-info-dialog-header__header osano-cm-header "> <!--?lit$604975124$--> </p> <!--?lit$604975124$--> <button class=" osano-cm-info-dialog-header__close osano-cm-close "> <!--?lit$604975124$--><svg width="20px" height="20px" viewBox="0 0 20 20" role="img" aria-labelledby="1d4978f1-c27c-4190-8988-e2c813284277"> <title id="1d4978f1-c27c-4190-8988-e2c813284277"><!---->Close Cookie Preferences<!----></title> <line role="presentation" x1="2" y1="2" x2="18" y2="18"></line> <line role="presentation" x1="2" y1="18" x2="18" y2="2"></line> </svg> </button> <!--?lit$604975124$--> </div> <div role="presentation" class=" osano-cm-info__info-views osano-cm-info-views osano-cm-info-views--hidden osano-cm-info-views--position_0 "> <!--?lit$604975124$--> </div> </div> <!--?lit$604975124$--><!--?lit$604975124$--><span tabindex="0" aria-hidden="true" data-focus="last"></span><!--?--> </div> </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLFHWSR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="skip-link">
+    <a href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#main-content" class="element-invisible element-focusable" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Skip to main content</a>
+  </div>
+        <div class="container-fluid bg-light" id="metanav">
+	    <div class="row mx-auto align-self-center">
+	    	<div class="col-10 col-lg-8 col-md-6 d-none d-lg-block">
+		    	<nav class="navbar navbar-expand-lg navbar-light py-0" id="ieeemenu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ieeemenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+				</button>			    	
+				<div id="ieeemenu" class="collapse navbar-collapse">
+			    	<ul class="navbar-nav">
+						<li class="nav-item pr-1"><a class="nav-link" href="https://www.ieee.org/" target="ieee-meta" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE.org</a></li>
+						<li class="nav-item px-1"><a class="nav-link" href="https://ieeexplore.ieee.org/" target="ieee-meta" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE <em>Xplore</em> Digital Library</a></li>
+						<li class="nav-item px-1"><a class="nav-link" href="https://standards.ieee.org/" target="ieee-meta" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Standards</a></li>
+						<li class="nav-item px-1"><a class="nav-link" href="https://spectrum.ieee.org/" target="ieee-meta" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Spectrum</a></li>
+						<li class="nav-item pl-1"><a class="nav-link" href="https://www.ieee.org/sitemap.html" target="ieee-meta" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">More Sites</a></li>
+					</ul>
+				</div>
+				</nav>
+	    	</div>
+			<div class="col">
+				<nav class="navbar navbar-expand-lg navbar-light float-right py-0">
+				<div id="usermenu" class="navbar p-0">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item pr-1 font-weight-bold"><a href="https://ieee-dataport.org/subscribe" class="nav-link btn btn-primary btn-sm text-white rounded my-2 mr-2 py-1" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Subscribe</a></li>
+						<li class="nav-item px-1">
+						<a class="nav-link" href="https://www.ieee.org/cart/public/myCart/page.html?refSite=https://ieee-dataport.org&amp;refSiteName=IEEE%20DataPort" aria-label="Cart" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/shopping-cart.svg" class="cart" alt="Cart"></a></li>
+						<li class="nav-item px-1"><a class="nav-link user-login" href="https://ieee-dataport.org/saml_login/?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive" data-destination="/open-access/heart-disease-dataset-comprehensive" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Login</a></li><li class="nav-item pl-1"><a class="nav-link" href="https://www.ieee.org/profile/public/createwebaccount/showCreateAccount.html?sourceCode=dataport&amp;signinurl=https://ieee-dataport.org/&amp;url=https://ieee-dataport.org/" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Create Free Account</a>					</li></ul>
+				</div>
+				</nav>
+	    	</div>
+	    </div>
+	</div>
+    <div class="container-fluid" id="mainnav">
+	     <div class="row py-4 mx-auto">
+		     <div class="col-lg-3 col-5 order-1 order-lg-0">
+			 	<nav class="navbar navbar-expand-sm py-1 pr-0">
+			 		<a class="navbar-brand mr-0" href="https://ieee-dataport.org/" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			 			<img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/dataport-logo.svg" alt="IEEE DataPort" class="logo">
+	 				</a>
+	 			</nav>		
+	     	</div>
+
+	    	<div class="col-lg-7 col-2 order-0 order-lg-1">
+		    	<nav class="navbar navbar-expand-lg navbar-light">
+			    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					 <div class="collapse navbar-collapse py-1" id="mainmenu">
+				    	<ul class="navbar-nav" id="menu">
+							<li class="nav-item pr-lg-3 text-nowrap"><a class="nav-link" href="https://ieee-dataport.org/datasets" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Datasets</a></li>
+							<li class="nav-item px-lg-3 text-nowrap"><a class="nav-link" href="https://ieee-dataport.org/submit-dataset" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Submit a Dataset</a></li>
+							<li class="nav-item px-lg-3 text-nowrap"><a class="nav-link" href="https://ieee-dataport.org/data-competitions" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Competitions</a></li>
+							<li class="nav-item pl-lg-3 text-nowrap"><a class="nav-link" href="https://ieee-dataport.org/search" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/search.svg" class="search-icon"><span class="search-text">Search</span></a></li>
+						</ul>
+					 </div>
+				</nav>
+	    	</div>
+
+	     	<div class="col-lg-2 col-5 order-2">
+	     		<nav class="navbar navbar-expand-sm float-right py-1">
+			 		<a class="navbar-brand" href="https://www.ieee.org/" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			 			<img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/ieee-logo.svg" alt="IEEE" class="partner-logo">
+	 				</a>
+	 			</nav>	 	
+	     	</div>
+	     	
+	     </div>
+     </div>
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+        <div class="container-fluid" id="banner">
+	    <div class="row py-4 mx-auto">
+		    <div class="col-md-8">
+				<h2>Datasets</h2>
+		    </div>
+		    <div class="col">
+				<h3>Open Access</h3>
+		    </div>		
+	    </div>
+    </div>
+    <div class="container-fluid" id="infocard">
+	    <div class="row py-4 mx-auto">
+			<div class="col-12">
+				<div class="addthis_inline_share_toolbox float-right"></div><h1>Heart Disease Dataset (Comprehensive)</h1>
+				
+			</div>
+	    </div>
+	    <div class="row mx-auto">
+			<div class="col-lg-3 pb-1 featured-image">
+				<div class="field field-name-field-dataset-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://ieee-dataport.org/sites/default/files/heart.PNG" rel="lightbox[field_dataset_image][]" title="" class="lightbox-processed" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img typeof="foaf:Image" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/heart.PNG" width="428" height="480" alt=""></a></div></div></div>						
+			</div>
+			<div class="col-xs-12 col-md-9 col-lg-5">
+				<dl class="topinfo"> 
+					<dt>Citation Author(s):</dt>
+					<dd> 
+						<div class="field field-name-field-dataset-authors field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="entity entity-field-collection-item field-collection-item-field-dataset-authors clearfix" about="/field-collection/field-dataset-authors/4353" typeof="">
+  <div class="content">
+    <div class="field field-name-field-first-name field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Manu </div></div></div><div class="field field-name-field-last-name field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Siddhartha</div></div></div><!--
+This file is not used by Drupal core, which uses theme functions instead.
+See http://api.drupal.org/api/function/theme_field/7 for details.
+After copying this file to your theme's folder and customizing it, remove this
+HTML comment.
+-->
+<div class="field field-name-field-orcid field-type-text field-label-hidden">
+    <div class="field-items">
+              <div class="field-item even"><a href="https://orcid.org/0000-0002-3908-3152" class="orcid" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/ORCID-iD_icon-vector.svg" style="width:16px; height: auto; vertical-align: middle;"></a></div>
+      </div>
+</div>
+<div class="field field-name-field-organization field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Liverpool John Moore's University</div></div></div>  </div>
+</div>
+</div></div></div>					</dd>
+					<dt>Submitted by:</dt>
+					<dd><span rel="sioc:has_creator"><span rel="sioc:has_creator"><a href="https://ieee-dataport.org/authors/manu-siddhartha" title="View user profile." class="username" xml:lang="" about="/authors/manu-siddhartha" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">MANU SIDDHARTHA</a></span></span></dd>
+					<dt>Last updated:</dt>
+					<dd>Fri, 11/06/2020 - 04:17</dd>
+					<dt>DOI:</dt>
+					<dd><a href="https://dx.doi.org/10.21227/dz4t-cm36" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">10.21227/dz4t-cm36</a></dd>
+					 
+					<dt>Data Format:</dt>
+					<dd><div class="field field-name-field-format field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://ieee-dataport.org/data-formats/csv-1" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">*.csv</a></div></div></div></dd>
+										<dt>Links:</dt>
+					<dd><div class="field field-name-field-external-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.nature.com/articles/s41597-019-0206-3" rel="nofollow" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">A database for using machine learning and data mining techniques for coronary artery disease diagnosis</a></div></div></div></dd>
+										<dt>License:</dt>
+					<dd><div class="field field-name-field-additional-license field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://creativecommons.org/licenses/by/4.0/" class="ccby" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Creative Commons Attribution</a></div></div></div></dd>
+				</dl>	
+	    </div>	    
+	    
+			<div class="col-xs-12 offset-xs-0 col-lg-4 offset-md-3 offset-lg-0 col-md-9">
+				<div><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/view.svg" style="height: 1.5em; margin-bottom: .5rem"> 54797 Views</div>
+				<dl class="topinfo"> 
+					                    
+					 
+
+				 
+					
+					<dt>Categories:</dt>
+					<dd>
+							<div class="field field-name-field-tags field-type-entityreference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://ieee-dataport.org/topic-tags/machine-learning" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Machine Learning</a></div><div class="field-item odd"><a href="https://ieee-dataport.org/topic-tags/health-0" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Health</a></div><div class="field-item even"><a href="https://ieee-dataport.org/topic-tags/biomedical-and-health-sciences" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Biomedical and Health Sciences</a></div></div></div>					</dd>
+				 
+					                    									
+					<dt>Keywords:</dt>
+					<dd>
+						<div class="field field-name-field-keywords field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://ieee-dataport.org/keywords/heart-disease" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Heart Disease</a>, <a href="https://ieee-dataport.org/keywords/coronary-artery-disease" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Coronary artery disease</a>, <a href="https://ieee-dataport.org/keywords/cardiovascular-disease" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Cardiovascular disease</a>, <a href="https://ieee-dataport.org/keywords/heart-disease-dataset" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">heart disease dataset</a></div></div></div>						 
+					</dd>
+				 
+				</dl>
+			</div>
+	    			
+
+    </div>
+	    <div class="row mx-auto">
+		    <div class="col-lg-3 pb-3">
+			     
+			   <div class="field field-name-field-rating field-type-fivestar field-label-hidden"><div class="field-items"><div class="field-item even"><div class="clearfix fivestar-average-stars"><div class="fivestar-static-item"><div class="form-item form-type-item" style="position: relative;">
+ <div class="fivestar-basic"><div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix"><div class="star star-1 star-odd star-first"><span class="on">5</span></div><div class="star star-2 star-even"><span class="on"></span></div><div class="star star-3 star-odd"><span class="on"></span></div><div class="star star-4 star-even"><span class="on"></span></div><div class="star star-5 star-odd star-last"><span class="on"></span></div></div></div>
+<div class="description formtips-processed" style="display: none;"><div class="fivestar-summary fivestar-summary-"></div></div>
+</div>
+</div></div></div></div></div> <span style="font-style: italic; font-size: 85%; color: #999; padding-left: 0.5em; line-height: 19px;">7 ratings - Please <a href="https://ieee-dataport.org/saml_login/?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive" style="color: #999; text-decoration: underline;" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">login</a> to submit your rating.</span>
+			   
+		    </div>
+		    <div class="col-lg-9 pb-3">
+			    <!--a class="btn btn-primary mr-3" href="#files"><i class="icon down-arrow"></i>ACCESS DATASET</a-->
+			    <a class="btn btn-primary mr-3" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" id="cite" data-toggle="modal" data-target="#citeModal" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><i class="icon quote"></i>CITE</a>
+			    <a class="btn btn-primary mr-3" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" id="share" data-toggle="modal" data-target="#shareModal" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><i class="icon share"></i>SHARE/EMBED</a>
+		    </div>
+	    </div>
+    </div>
+    <main class="container-fluid" id="main">
+	    <div class="row py-4 mx-auto">
+		    <div class="col-lg-8 col-md-12 pr-5">
+				<div id="main-content">
+					
+
+					<div class="content">
+							<h4>Abstract&nbsp;</h4>
+							<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>This heart disease dataset is curated by combining 5 popular heart disease datasets already available independently but not combined before. In this dataset, 5 heart datasets are combined over 11 common features which makes it the largest heart disease dataset available so far for research purposes. The five datasets used for its curation are:</p>
+<ol>
+<li>Cleveland</li>
+<li>Hungarian</li>
+<li>Switzerland</li>
+<li>Long Beach VA</li>
+<li>Statlog (Heart) Data Set.</li>
+</ol>
+<h2>This dataset consists of 1190 instances with 11 features. These datasets were collected and combined at one place to help advance research on CAD-related machine learning and data mining algorithms, and hopefully to ultimately advance clinical diagnosis and early treatment.&nbsp;</h2>
+</div></div></div><div class="field field-name-field-instructions field-type-text-long field-label-above"><div class="field-label">Instructions:&nbsp;</div><div class="field-items"><div class="field-item even"><p>This dataset can be used for building a predictive machine learning model for early-stage heart disease detection</p>
+</div></div></div><div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-1178" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1178#comment-1178" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>ok</p>
+</div></div></div><span property="dc:date dc:created" content="2021-02-12T12:45:23-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/ashish-basnet" title="View user profile." class="username" xml:lang="" about="/authors/ashish-basnet" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Ashish Basnet</a> on Fri, 02/12/2021 - 12:45</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-1235" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1235#comment-1235" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>1</p>
+</div></div></div><span property="dc:date dc:created" content="2021-03-01T05:16:14-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/moslem-darvishi" title="View user profile." class="username" xml:lang="" about="/authors/moslem-darvishi" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">moslem darvishi</a> on Mon, 03/01/2021 - 05:16</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-1265" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1265#comment-1265" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>2</p>
+</div></div></div><span property="dc:date dc:created" content="2021-03-10T08:14:09-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/kevin-zhang-0" title="View user profile." class="username" xml:lang="" about="/authors/kevin-zhang-0" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Kevin zhang</a> on Wed, 03/10/2021 - 08:14</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-1541" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1541#comment-1541" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>This dataset includes 272 duplicate records, notably all data from statlog is in the original dataset. Also all locations where data was previously missing look like they were simply set to 0. User beware.</p>
+</div></div></div><span property="dc:date dc:created" content="2021-05-27T10:39:07-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/jeremy-huckins" title="View user profile." class="username" xml:lang="" about="/authors/jeremy-huckins" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Jeremy Huckins</a> on Thu, 05/27/2021 - 10:39</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+
+<div class="indented"><a id="comment-1586" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1586#comment-1586" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Hello, I will work on this database soon. I ask you, if possible, to tell the information you have obtained about the problems of this database in full and cleared.</p>
+</div></div></div><span property="dc:date dc:created" content="2021-06-12T16:39:24-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/arman-daliri" title="View user profile." class="username" xml:lang="" about="/authors/arman-daliri" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Arman Daliri</a> on Sat, 06/12/2021 - 16:39</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-2332" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/2332#comment-2332" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Your name<br>
+Rabia Almamlook</p>
+</div></div></div><span property="dc:date dc:created" content="2021-11-13T15:07:06-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/rabia-almamlook" title="View user profile." class="username" xml:lang="" about="/authors/rabia-almamlook" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Rabia Almamlook</a> on Sat, 11/13/2021 - 15:07</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-3466" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/3466#comment-3466" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>hey Jeremy, how would you suggest to deal with missing data?</p>
+</div></div></div><span property="dc:date dc:created" content="2022-12-14T18:15:06-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/amir-jayousi" title="View user profile." class="username" xml:lang="" about="/authors/amir-jayousi" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Amir Jayousi</a> on Wed, 12/14/2022 - 18:15</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+</div><a id="comment-1862" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1862#comment-1862" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Thank you!</p>
+</div></div></div><span property="dc:date dc:created" content="2021-09-18T15:16:27-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/jian-hao-loo" title="View user profile." class="username" xml:lang="" about="/authors/jian-hao-loo" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">JIAN HAO LOO</a> on Sat, 09/18/2021 - 15:16</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-1896" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1896#comment-1896" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Thanks</p>
+</div></div></div><span property="dc:date dc:created" content="2021-09-26T16:04:20-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/aqil-azmi" title="View user profile." class="username" xml:lang="" about="/authors/aqil-azmi" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Aqil Azmi</a> on Sun, 09/26/2021 - 16:04</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-1901" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/1901#comment-1901" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>cholesterol has 172 (14.5%) zeros</p>
+</div></div></div><span property="dc:date dc:created" content="2021-09-29T06:35:04-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/chee-hong-wong" title="View user profile." class="username" xml:lang="" about="/authors/chee-hong-wong" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Chee Hong Wong</a> on Wed, 09/29/2021 - 06:35</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-3496" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/3496#comment-3496" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>ok</p>
+</div></div></div><span property="dc:date dc:created" content="2022-12-22T01:37:15-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/vincent-udechukwu" title="View user profile." class="username" xml:lang="" about="/authors/vincent-udechukwu" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Vincent Udechukwu</a> on Thu, 12/22/2022 - 01:37</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-4464" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/4464#comment-4464" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>azhe</p>
+</div></div></div><span property="dc:date dc:created" content="2023-10-16T07:55:48-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/ejo-liu" title="View user profile." class="username" xml:lang="" about="/authors/ejo-liu" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">EJO LIU</a> on Mon, 10/16/2023 - 07:55</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+<a id="comment-5638" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/5638#comment-5638" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>How to deal with the cholestrol column with zeroes in it</p>
+</div></div></div><span property="dc:date dc:created" content="2024-07-04T18:38:06-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/ayisha-cok-0" title="View user profile." class="username" xml:lang="" about="/authors/ayisha-cok-0" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Ayisha COK</a> on Thu, 07/04/2024 - 18:38</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+
+<div class="indented"><a id="comment-6098" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/6098#comment-6098" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Check outliers first, if they're too many, use the median value to replace the zeros, otherwise use the mean value</p>
+</div></div></div><span property="dc:date dc:created" content="2024-09-12T22:25:52-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/arun-m-2" title="View user profile." class="username" xml:lang="" about="/authors/arun-m-2" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Arun M</a> on Thu, 09/12/2024 - 22:25</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+</div><a id="comment-6335" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+<div about="/comment/6335#comment-6335" typeof="sioc:Post sioct:Comment" class="ds-1col comment view-mode-full clearfix">
+
+  
+  <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>This dataset includes 272 duplicate records, notably all data from statlog is in the original dataset. Also all locations where data was previously missing look like they were simply set to 0. User beware.</p>
+</div></div></div><span property="dc:date dc:created" content="2024-10-01T19:54:30-04:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <a href="https://ieee-dataport.org/authors/jess-wei" title="View user profile." class="username" xml:lang="" about="/authors/jess-wei" typeof="sioc:UserAccount" property="foaf:name" datatype="" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">jess wei</a> on Tue, 10/01/2024 - 19:54</span><ul class="links inline"><li class="comment_forbidden first last"><span><a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport?destination=node/3141%23comment-form" class="btn btn-primary btn-sm mt-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Log in</a> to post comments</span></li>
+</ul></div>
+
+
+  </div>
+  	
+					</div>
+				</div>
+			</div>
+		    <div class="col-lg-4 col-md-12">
+				<div class="column-box">
+					<h4>Dataset Files</h4><a name="files" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a>
+						<ul class="filelist list-group list-group-flush pl-0"><li class="list-group-item list-group-item-action"><a href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-toggle="modal" data-target="#accessModal" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img alt="File" title="CSV" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/csv.svg" width="24"></a> <a href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-toggle="modal" data-target="#accessModal" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"> heart_statlog_cleveland_hungary_final.csv</a> (38.76 kB)</li><ul class="filelist list-group list-group-flush pl-0"></ul></ul><a href="https://ieee-dataport.org/saml_login/?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive" id="accesss3" class="btn btn-primary my-2" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><i class="icon document-cloud"></i>LOGIN TO ACCESS DATASET FILES</a><br><em>Open Access dataset files are accessible to all logged in&nbsp; users. Don't have a login?&nbsp; Create a <a href="https://www.ieee.org/profile/public/createwebaccount/showCreateAccount.html?sourceCode=dataport&amp;signinurl=https://ieee-dataport.org/&amp;url=https://ieee-dataport.org/" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">free IEEE account</a>.&nbsp; IEEE Membership is not required.</em>						
+
+				</div>
+										
+								
+				<div class="pt-4">
+					<h4>Documentation</h4>
+                	<div class="field field-name-field-documentation field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><table class="sticky-header" style="position: fixed; top: 0px; left: 1266.48px; visibility: hidden;"><thead style="display: table-header-group;"><tr class="list-group-item list-group-item-action"><th>Attachment</th><th>Size</th> </tr></thead></table><table class="sticky-enabled tableheader-processed sticky-table">
+ <thead><tr class="list-group-item list-group-item-action"><th>Attachment</th><th>Size</th> </tr></thead>
+<tbody class="list-group list-group-flush">
+ <tr class="odd list-group-item list-group-item-action"><td><span class="file"><img alt="File" title="PDF" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/pdf.svg" width="24"> <a href="https://ieee-dataport.s3.amazonaws.com/docs/18722/documentation.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJOHYI4KJCE6Q7MIQ%2F20241216%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241216T204750Z&amp;X-Amz-SignedHeaders=Host&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=804fa40218efd66b7ff392b6f57d63e883f5339a5477218e7fff73903e002196" type="application/pdf; length=420674" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">documentation.pdf</a></span></td><td>410.81 KB</td> </tr>
+</tbody>
+</table>
+</div></div></div>				</div> 
+        
+
+	            	            				
+                <div class="column-box pt-4">
+	                <h4>QUESTIONS?</h4>
+					<p class="mb-2"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/email.svg" style="height: 12px; vertical-align: baseline;"> <a href="https://ieee-dataport.org/saml_login/?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Login to Send Author a Private Message</a></p>
+					<p><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/caution.svg" style="height: 13px; vertical-align: baseline;"> <a href="https://ieee-dataport.org/contact" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Report a problem with this Dataset</a></p>
+				</div>	
+				
+					            
+                    									
+	            	
+						
+			</div>
+		</div>		    
+    </main>
+
+
+<div class="modal fade" id="accessModal" tabindex="-1" role="dialog" aria-labelledby="accessModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		  <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Dataset Access</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+		  <div class="modal-body">
+			  <h3>How to Access this Dataset</h3>
+			  <p>This Open Access dataset is available to all IEEE DataPort users. Please login or register.</p>
+			  <p>
+				  <a href="https://ieee-dataport.org/saml_login/?idp=IEEEDataport" class="btn btn-primary btn-lg" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Login</a> &nbsp; <a href="http://www.ieee.org/go/create_web_account" target="_blank" class="btn btn-primary btn-lg" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Create a FREE IEEE Account</a>
+			  </p>
+		  </div>
+	  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		  <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Upload your Dataset</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+		  <div class="modal-body">
+			  <h3>How to Upload Dataset Files Directly to AWS</h3>
+			  <p>IEEE DataPort Subscribers may upload their dataset files directly to IEEE DataPort's AWS S3 file storage. Please read the <a href="https://ieee-dataport.org/help/upload-your-files-directly-ieee-dataport-s3-bucket" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Upload Your Files directly to the IEEE DataPort S3 Bucket</a> help topic for detailed instructions.</p><p>You will need the following information to complete your upload:</p>
+			  <ol>
+				  <li>Your AWS Access Key and Secret key, which can be found on your <a href="https://ieee-dataport.org/user" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE DataPort User Profile</a>.</li>
+				  <li><em>DATASET TYPE:</em> open</li>
+				  <li><em>USERID:</em> 0</li>
+				  <li><em>DATASETID:</em> 3141</li>
+			  </ol>
+		  </div>
+	  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="citeModal" tabindex="-1" role="dialog" aria-labelledby="citeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Dataset Citation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	      <div id="accordion">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100" role="button" data-toggle="collapse" data-target="#ieee" aria-expanded="true" aria-controls="collapseOne" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          IEEE
+			        </a>
+			      </h5>
+			    </div>
+			
+			    <div id="ieee" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			      <div class="card-body">
+			        Manu  Siddhartha,
+			        November 5, 2020,
+				    "Heart Disease Dataset (Comprehensive)",
+				    IEEE Dataport, 
+				    doi: https://dx.doi.org/10.21227/dz4t-cm36.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100" role="button" data-toggle="collapse" data-target="#bibtex" aria-expanded="false" aria-controls="collapseTwo" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          BibTeX
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="bibtex" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			      <div class="card-body">
+			        @data{dz4t-cm36-20,<br>
+				  doi = {10.21227/dz4t-cm36},<br>
+				  url = {https://dx.doi.org/10.21227/dz4t-cm36},<br>
+				  author = {Siddhartha, Manu },<br>
+				  publisher = {IEEE Dataport},<br>
+				  title = {Heart Disease Dataset (Comprehensive)},<br>
+				  year = {2020}
+				}
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#ris" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          RIS
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="ris" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        	TY  - DATA<br>
+				T1  - Heart Disease Dataset (Comprehensive)<br>
+				AU  - Manu  Siddhartha<br>
+				PY  - 2020<br>
+				PB  - IEEE Dataport<br>
+				UR  - 10.21227/dz4t-cm36<br>
+				ER  -	  <br>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#apa" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          APA
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="apa" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        	Manu  Siddhartha.
+				(2020).
+				    Heart Disease Dataset (Comprehensive).
+				    IEEE Dataport.
+				    https://dx.doi.org/10.21227/dz4t-cm36			      </div>
+			    </div>
+			  </div>  
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#harvard" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          Harvard
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="harvard" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        	Manu  Siddhartha,
+				2020.
+				    Heart Disease Dataset (Comprehensive).
+				    Available at:
+				    https://dx.doi.org/10.21227/dz4t-cm36.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#mla" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          MLA
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="mla" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        Manu  Siddhartha.
+				(2020).
+				    "Heart Disease Dataset (Comprehensive)."
+					Web.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#vancouver" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          Vancouver
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="vancouver" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        1. Manu  Siddhartha.
+				    Heart Disease Dataset (Comprehensive) [Internet].
+				IEEE Dataport; 2020.
+				Available from :	    
+				    https://dx.doi.org/10.21227/dz4t-cm36			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <a class="btn-link d-inline-block w-100 collapsed" role="button" data-toggle="collapse" data-target="#chicago" aria-expanded="false" aria-controls="collapseThree" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+			          Chicago
+			        </a>
+			      </h5>
+			    </div>
+			    <div id="chicago" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        Manu  Siddhartha.
+				    "Heart Disease Dataset (Comprehensive)."
+				doi:	    
+				    10.21227/dz4t-cm36			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Share / Embed</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	      <div class="card">
+		      <div class="card-body">
+	     <h4 class="card-title">Embed this dataset on another website</h4>
+			<p style="padding-bottom: 10px;">Copy and paste the HTML code below to embed your dataset:</p>
+		<textarea name="embed-code" id="emded-code" style="width: 100%; height: 100px; overflow-x: scroll;" spellcheck="false">&lt;iframe width="100%" height="600" src="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive/embed" frameborder="0" class="embed-textarea" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"&gt;&lt;/iframe&gt;</textarea>
+	     </div>
+	      </div>
+		  <div class="card">
+		      <div class="card-body">
+	     <h4 class="card-title">Share via email or social media</h4>
+			<p style="padding-bottom: 10px;">Click the buttons below:</p>
+	 <div class="addthis_toolbox addthis_default_style addthis_32x32_style"><a class="addthis_button_facebook" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/facebook.png" alt="facebook"></a><a class="addthis_button_twitter" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/twitter.png" alt="twitter"></a><a class="addthis_button_email" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/mail.png" alt="mail"></a><a class="addthis_button_compact" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/addthis.png" alt="share"></a></div>
+	     </div></div>
+	      
+	      <div class="card">
+		      <div class="card-body">
+	     <h4 class="card-title">Share a link to this dataset</h4>
+		<p><strong for="permalink">Permalink:</strong>
+	 http://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive</p>
+
+	 <p><strong for="doi-link">DOI Link:</strong>
+	 https://dx.doi.org/10.21227/dz4t-cm36</p>
+
+        <p><strong for="shortlink">Short Link:</strong>
+        http://ieee-dataport.org/3141</p>
+	 
+	     </div>      </div>
+
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="s3Modal" tabindex="-1" role="dialog" aria-labelledby="s3Modal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Access on AWS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+					<textarea id="s3uris" style="width: 100%; height: 300px; white-space: pre;  word-wrap: normal;  overflow-x: scroll;" readonly="readonly" spellcheck="false">s3://ieee-dataport/open/18722/heart_statlog_cleveland_hungary_final.csv
+</textarea>					
+				<a class="clipit" style="cursor: pointer; background: url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACZElEQVQ4T33TX0hTURwH8O+d7m5rG7eFLlpFZGSN/EenxtQyeogiAnsx8qEMe/AhWenIsihGUZahlqwHH5LCIEh6ECIqH6yVttY5Ic64JrQespklreWW7lq7cUUpb8vzdH7nz+ec84XDIUXzlG3gB2X7HgCZs9NfcjjxvqfzjaRezs0NeLehjeNAlDoaRfqKnS6rs9K1TKn97a2jI49aPwsCfiq1LINVP0WV0v8boDv2VZJgMIjlFTeg1/MQBNOMH43GMDUl4eOtw8jNzUX33XYF2DQPuLoV9KhPJh0dtzE6+gmCIMBsNkOr1SIWj+N7NAqrNRPl5ftxrYRjx56pgKYi0JpemSRlGe9DoVTRYHVWFjQch5Zijrn7VECjE7SmL0mSyWTKzXODGo0GLUUaVudXAQ2bQWv9vwgde4GCDAf6xwNwPT8I396heWB6WhqanWms/pUKOE9A3f5pUnxvLQ6tO4Kbb6/jSamI8clJhEIhWCwWRCIRFOfno8mpZWeYCvAUgLoDEpEkCdu77OgpFVM+hed5NDl45ulXAadzQI+zBJlKJBbMQK/T4QrRsQuDKuCEHbTu9SR5OeJDXoYDA+MBuHsr0K26iUGvR+NGA7ssqoDabNCT/T/IljurcGB9NTqGvHhcKuLrxMRMBjabDeFwGCWFhbhUsIg1D6sA1xrQ+oE4icfj2NVlx8P/ZGA0GtGQZ2St71RA1UrQs2KMxGKxBTMwmUw4Zzextg9/AAMAc9liPPCOJUhC+ufDzQN1PI/qpTrW+Q27AUwon2kJAJtDi1MWDtkLHj87GZExHJjGRQDh32Cq4yy/XTAAAAAAAElFTkSuQmCC&#39;) no-repeat; padding-left: 20px; min-height: 20px; line-height: 20px; display: inline-block;" data-clipboard-text="s3://ieee-dataport/open/18722/heart_statlog_cleveland_hungary_final.csv
+" data-clipboard-target="#s3uris" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Copy All URIs to the Clipboard</a>	<div id="clipmsg" style="display: inline-block;"></div>
+<br><a href="https://ieee-dataport.org/user" style="cursor: pointer; background: url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABV0lEQVQ4T6WTu07DMBSG/5PEAnaSdkTqxMDEwAuAkFh4BpZuLGyI1Lk0Q5GYWJHYmUCCCTH0FdiABdY2Wbqh1vZBQb1R4UYCb7b0fef4+Dfhn4sq+SaLWl0fGOYtEA8cox962dr7hFsqCMLPBjvuPYDNWSGjwU6Yt0WnPLMLmiz8unqeg1+19vZYgDyjngBq5al3YxXUpDo04LtpZUInT8RpuV+PRueksZtnYtsq8FujEIT2VMB4c121zwqkWDw6pDfybEXYBXJ4DNClbchsdFFkq75FwBRE6oIZJzYBGbrqZ17zFwGTL1XZ+pkNNpo/PE/s9BLqLwiY/EilYIQ/YMYLyDTY8MCBd0uuG5bwwjMyBVIlDLTmYQZkkYrZMBfaGndgheMiFcmytH4LfDk8Auh6Lp5JPxVxZcwnSQzkKGYgGt8pMQ66RSy6fxLkqT0bvwmrf2NFG18f24gRlfrNkAAAAABJRU5ErkJggg==&#39;) no-repeat; padding-left: 20px; min-height: 20px; line-height: 20px; display: inline-block; margin: 7px 0;" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">View AWS Security Credentials</a>
+<br><a href="https://ieee-dataport.org/help/accessing-ieee-dataport-dataset-files-through-amazon-web-services-aws" style="cursor: pointer; background: url(&#39;data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjU2IiB4Mj0iMjU2IiB5MT0iNDk2IiB5Mj0iMTYiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzU1NThmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwYzBmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGc+PGc+PHBhdGggZD0ibTIwMi45ODMgMzkyLjgwM2MtNS44NTcgNS44NTgtNS44NTYgMTUuMzU1LjAwMSAyMS4yMTMgMTQuMTc4IDE0LjE3NyAzMy4wMDYgMjEuOTg0IDUzLjAxNiAyMS45ODRzMzguODM4LTcuODA3IDUzLjAxNi0yMS45ODRjNS44NTctNS44NTggNS44NTgtMTUuMzU1LjAwMS0yMS4yMTMtNS44NTktNS44NTgtMTUuMzU2LTUuODU4LTIxLjIxNC0uMDAxLTguNTExIDguNTExLTE5LjgwNiAxMy4xOTgtMzEuODAzIDEzLjE5OHMtMjMuMjkyLTQuNjg3LTMxLjgwMy0xMy4xOThjLTUuODU5LTUuODU4LTE1LjM1NC01Ljg1Ny0yMS4yMTQuMDAxem0xMjcuMjYzIDQyLjQ0M2MtMTkuODMyIDE5LjgzMi00Ni4yIDMwLjc1NC03NC4yNDYgMzAuNzU0cy01NC40MTQtMTAuOTIyLTc0LjI0Ni0zMC43NTRjLTUuODU3LTUuODU3LTE1LjM1NS01Ljg1Ny0yMS4yMTMgMC01Ljg1OCA1Ljg1OC01Ljg1OCAxNS4zNTUgMCAyMS4yMTMgMjUuNDk4IDI1LjQ5OSA1OS4zOTkgMzkuNTQxIDk1LjQ1OSAzOS41NDFzNjkuOTYxLTE0LjA0MiA5NS40NTktMzkuNTQxYzUuODU4LTUuODU4IDUuODU4LTE1LjM1NSAwLTIxLjIxMy01Ljg1Ny01Ljg1Ny0xNS4zNTUtNS44NTctMjEuMjEzIDB6bTEyMC4yNzgtMjk0LjI4NmMtNy4yMDQtNzUuNTk0LTkwLjMxMy0xMTguNTYzLTE1NS42NTMtODEuMzMtMjUuNTYzLTI3Ljg5LTYwLjg4Ny00My42My05OC44NzEtNDMuNjMtNzEuMDc3IDAtMTI5LjUwMSA1NS4yMDgtMTM0LjYzMyAxMjQuOTk3LTM2LjE5IDEyLjQ1Ny02MS4zNjcgNDYuNDgyLTYxLjM2NyA4NS4wMDMgMCA0OS41NzYgNDEuMDgzIDkwIDkxIDkwaDMzMGM0OS45NjcgMCA5MS00MC40OCA5MS05MCAwLTM4LjU1Ny0yNS4yMy03Mi42MTItNjEuNDc2LTg1LjA0em0tMjkuNTI0IDE0NS4wNGgtMzMwYy0zMy42MzYgMC02MS0yNi45MTYtNjEtNjAgMC0yOC4zNTMgMjAuNjUxLTUzLjA4MSA0OS4xMDUtNTguNzk4IDcuMDY4LTEuNDIgMTIuMTI3LTcuNjY5IDEyLjA0NC0xNC44NzgtLjY5OS01OS43OTkgNDcuNTQxLTEwNi4zMjQgMTA0Ljg1MS0xMDYuMzI0IDMzLjEzNyAwIDYzLjcxMSAxNS40OTUgODMuODgyIDQyLjUxMSA0Ljk5MiA2LjY4NiAxNC40NjggOC4wMDEgMjEuMDkgMi45NzMgNTAuMTQxLTM4LjA2OCAxMjEuMDMtMS40MjEgMTE5Ljg3OSA2MC43MjUtLjEzOSA3LjI1MiA0LjkzMiAxMy41NjQgMTIuMDQzIDE0Ljk5MyAyOC40NTQgNS43MTcgNDkuMTA2IDMwLjQ0NSA0OS4xMDYgNTguNzk4IDAgMzMuMDg0LTI3LjM2NCA2MC02MSA2MHptLTE1MCA3NWMwLTguMjg0LTYuNzE2LTE1LTE1LTE1cy0xNSA2LjcxNi0xNSAxNSA2LjcxNiAxNSAxNSAxNSAxNS02LjcxNiAxNS0xNXoiIGZpbGw9InVybCgjU1ZHSURfMV8pIi8+PC9nPjwvZz48L3N2Zz4=&#39;) no-repeat; background-size: 20px; padding-left: 24px; min-height: 20px; line-height: 20px; display: inline-block;" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">How to use Access Files on AWS</a>			
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Want to access the data files?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead"><strong>Open Access data files are available to all users upon login. <a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive&amp;utm_source=openaccess&amp;utm_medium=popup&amp;utm_campaign=login_campaign&amp;utm_content=Login" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Login</a> or <a href="http://www.ieee.org/go/create_web_account?utm_source=openaccess&amp;utm_medium=popup&amp;utm_campaign=login_campaign&amp;utm_content=Create_a_free_account" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">create a free account</a> today.</strong></p>
+
+      </div>
+      <div class="modal-footer">
+   		<a href="https://ieee-dataport.org/saml_login?idp=IEEEDataport&amp;destination=/open-access/heart-disease-dataset-comprehensive" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><button type="button" class="btn btn-primary">Login</button></a>
+        <a href="http://www.ieee.org/go/create_web_account" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><button type="button" class="btn btn-primary">Create Account</button></a>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/clipboard.min.js.download"></script>
+		<script> 	
+
+		setTimeout(() => {
+		  jQuery('#exampleModalRegister').modal(open);
+		}, 10000);
+
+var clipboard = new Clipboard('.clipit');
+			
+clipboard.on('success', function(e) {
+	
+	jQuery('#clipmsg').text('Success: Copied to your clipboard!');
+	jQuery('#clipmsg').addClass('text-success');
+	jQuery('#clipmsg').removeClass('text-danger'); 
+    e.clearSelection();
+});
+
+clipboard.on('error', function(e) {
+	
+	jQuery('#clipmsg').text('Could not copy to your clipboard. Please copy manually.');
+	jQuery('#clipmsg').removeClass('text-success');
+	jQuery('#clipmsg').addClass('text-danger');	
+	jQuery("#s3uris").focus();
+	jQuery("#s3uris").select();	
+ 	
+});
+			
+			 </script>
+		
+		  </div>
+</div>
+  </div><iframe name="__uspapiLocator" style="display: none;" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/saved_resource.html"></iframe>
+<footer class="container-fluid top-footer">
+	<div class="row py-4 mx-auto footer-nav">
+
+		<div class="footer-nav-item col-md-3 col-sm-12">
+			<nav class="navbar navbar-expand-sm py-1 pl-0">
+	 			<a class="navbar-brand" href="https://ieee-dataport.org/" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">
+	 				<img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/dataport-logo-white.svg" alt="IEEE DataPort" class="logo" style="height: 44px; width: auto;">
+				</a>
+			</nav>
+			
+			<div class="mb-3">
+			<form class="mailchimp-signup-subscribe-form" action="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive" method="post" id="mailchimp-signup-subscribe-block-get-updates-form" accept-charset="UTF-8" data-hs-cf-bound="true" abineguid="11666F9422CE40C79106C0306648EA40"><div><div class="mailchimp-signup-subscribe-form-description">Newsletter Signup:</div><div id="mailchimp-newsletter-3333fbe9ca-mergefields" class="mailchimp-newsletter-mergefields"><div class="form-item form-type-textfield form-item-mergevars-EMAIL">
+ <input placeholder="Email Address *" type="text" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="128" class="form-text required">
+<div id="pwm-inline-icon-11318" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -28px; margin-left: 213px;"><svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 40 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg></div></div>
+<div id="edit-mergevars-privacy" class="form-radios"><div class="form-item form-type-radio form-item-mergevars-PRIVACY">
+ <input placeholder="IEEE Privacy Policy" type="checkbox" id="edit-mergevars-privacy-i-have-read-and-accept-the-ieee-privacy-policy" name="mergevars[PRIVACY]" value="I have read and accept the IEEE Privacy Policy" class="form-radio">  <label class="option" for="edit-mergevars-privacy-i-have-read-and-accept-the-ieee-privacy-policy">I have read and accept the <a href="http://www.ieee.org/security_privacy.html" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Privacy Policy</a></label>
+
+</div>
+</div></div><input type="hidden" name="form_build_id" value="form-kdKkVp1XyCTdGLFVCrIBWb3pstpyMuvMu3ss18B_XYg">
+<input type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_get_updates_form">
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit btn btn-primary text-white mr-4"></div></div></form></div>			
+			<div class="mb-3">
+				<a href="https://x.com/IEEEDataPort" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/x-logo.svg" width="21" class="mr-2"></a>
+				<a href="https://www.linkedin.com/company/ieee-dataport/" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/In-White-21@2x.png" width="21"></a>
+				<a href="https://www.youtube.com/@ieeedataport7743" target="_blank" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"><img src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/youtube.svg" width="32" style="margin-left: 6px;"></a>
+			</div>
+
+		</div>
+
+		<div class="footer-nav-item col-md-3 col-sm-12 pt-1">
+			<a href="https://ieee-dataport.org/why-ieee-dataport" class="btn btn-outline-primary btn-lg mb-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Why IEEE DataPort?</a>
+			<nav class="navbar pl-0 pt-0">
+				<ul class="navbar-nav">
+					<li><a class="nav-link" href="https://ieee-dataport.org/datasets" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Access Datasets</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/submit-dataset" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Submit a Dataset</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/subscribe" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Subscribe</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/contact" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer-nav-item col-md-3 col-sm-12 pt-1">
+			<a href="https://ieee-dataport.org/news" class="btn btn-outline-primary btn-lg mb-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE DataPort Resources</a>
+			<nav class="navbar pl-0 pt-0">
+				<ul class="navbar-nav">
+					<li><a class="nav-link" href="https://ieee-dataport.org/search" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Dataset Search</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/insights" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Newsletters and Insights</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/use-cases-and-additional-resources" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Use Cases</a></li>
+					<li><a class="nav-link" href="https://supportcenter.ieee.org/" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Support Center</a></li>
+					
+					<li><a class="nav-link" href="https://ieee-dataport.org/help" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Help &amp; FAQs</a></li>
+				</ul>
+			</nav>
+		</div>		
+		<div class="footer-nav-item col-md-3 col-sm-12 pt-1">
+			<a href="https://ieee-dataport.org/institutional-subscriptions" class="btn btn-outline-primary btn-lg mb-3" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Business Solutions</a>
+			<nav class="navbar pl-0 pt-0">
+				<ul class="navbar-nav">
+					<li><a class="nav-link" href="https://ieee-dataport.org/institutional-subscriptions" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Institutional Subscriptions</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/corporate-programs" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Corporate Partnerships</a></li>
+					<li><a class="nav-link" href="https://ieee-dataport.org/sites/default/files/IEEE-DataPort-Media-Kit-2025.pdf" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Advertising/Media Kit</a></li>
+					<!-- li><a class="nav-link" href="#">Data Competition Sponsorship</a></li -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<footer class="container-fluid bottom-footer">
+	<div class="row py-4 mx-auto justify-content-center">
+		
+		<p class="text-center"><a href="http://www.ieee.org/index.html" id="u-home" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Home</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/sitemap.html" id="u-home" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Sitemap/More Sites</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/about/contact_center/index.html" id="u-contact" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Contact</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/accessibility_statement.html" id="u-accessibility" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Accessibility</a> &nbsp;|&nbsp; <a href="http://www.ieee.org/p9-26.html" id="u-non" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Nondiscrimination Policy</a> &nbsp;|&nbsp; <a href="http://ieee-ethics-reporting.org/" id="u-ethics-reporting" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Ethics Reporting</a>  &nbsp;|&nbsp; <a href="http://www.ieee.org/security_privacy.html" id="u-privacy" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">IEEE Privacy Policy</a> &nbsp;|&nbsp; <a href="https://www.ieee.org/about/help/site-terms-conditions.html" id="u-terms" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b">Terms &amp; Disclosures</a></p>
+		
+		<p class="text-center">© Copyright <script type="text/javascript">document.write((new Date()).getFullYear());</script>2024 IEEE - All rights reserved. A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.<br>
+
+		
+	</p></div>
+</footer>
+  <script type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/js_VU7P4CTgUZdF2SyFko5LLAg9ZK0OSVjXVaAFnTLgVt0.js.download"></script>
+
+<div class="modal fade" id="inscodeModal" tabindex="-1" role="dialog" aria-labelledby="inscodeModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Institutional Subscription Code</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	      <form method="post" action="https://ieee-dataport.org/user" data-hs-cf-bound="true" abineguid="981CCE453E0549FD8AE1EB55C94B9DE6">
+	      	<label for="inscode">Does your institution have an IEEE DataPort subscription code? If yes, please enter the code below.</label>
+	      	<input type="text" name="inscode" id="inscode" maxlength="20" size="20">
+	      	<input type="submit" class="btn btn-primary" value="Submit">
+	      </form>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">I Don't Have a Code</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <script><!--
+	
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
+}
+
+	var ref = getCookie('dataportref');
+	if (ref) {
+		if (ref.includes('manuscriptcentral') && jQuery('.submit-open-access').length) {
+			jQuery('.submit-open-access').attr('href','/open-access-journals');
+		}
+	}
+
+	const urlParams = new URLSearchParams(window.location.search);
+	const paramValue = urlParams.get('check_code');
+	
+	var ins = getCookie('inscookie');
+	if (ins && !paramValue) {
+		jQuery( document ).ready(function() {
+			setCookie('inscookie',0, 1);
+			jQuery('#inscodeModal').modal('show');
+		});
+	}
+	
+	if (paramValue) {
+		setCookie('inscookie',0, 1);
+		window.location.href = '/user';
+	}
+
+	
+	jQuery('.webform-client-form-1772').submit(function(e) {
+		var myval = jQuery('.webform-component--ieee-open-access-journal input:checked').val();
+		if (myval) setCookie('oajournal',myval, 1);	
+	});
+
+
+//--></script>	<script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/bootstrap.min.js.download" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	  !function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+	  r.invoke.apply(r,arguments):r.queue.push(arguments)},
+	  r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+	  f.FeathrBoomerang=r;var g=e.createElement(a),
+	  h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+	  g.async=!0,g.src=t,h.appendChild(g)}
+	  }(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr");
+
+	  feathr("fly", "588f5ef88e80271ed938605b");
+	  feathr("sprinkle", "page_view");
+	</script>
+
+
+<div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div id="outerImageContainer" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a id="prevLink" title="Previous" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b" style="padding-top: 10px;"></a><a id="nextLink" title="Next" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b" style="padding-top: 10px;"></a></div></div><div id="loading"><a href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" id="loadingLink" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a></div></div>        <div id="imageDataContainer" class="clearfix" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a id="framePrevLink" title="Previous" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b" style="padding-top: 10px;"></a><a id="frameNextLink" title="Next" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b" style="padding-top: 10px;"></a></div><a id="bottomNavClose" title="Close" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"></a><a id="bottomNavZoom" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a><a id="bottomNavZoomOut" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a><a id="lightshowPause" title="Pause Slideshow" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" style="display: none;" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a><a id="lightshowPlay" title="Play Slideshow" href="https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive#" style="display: none;" data-feathr-click-track="true" data-feathr-link-aids="588f5ef88e80271ed938605b"></a></div></div>        </div>      </div>
+<script id="hs-script-loader" text="" charset="" type="text/javascript" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/46222716(1).js.download"></script><iframe allow="join-ad-interest-group" data-tagging-id="G-72ZKG72Z4K" data-load-time="1734382073228" height="0" width="0" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/rul.html" style="display: none; visibility: hidden;"></iframe>
+<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/saved_resource(1).html"></iframe></body><div class="abineContentPanel" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent !important; margin: 0px !important; padding: 0px !important; display: none; opacity: 1 !important; z-index: 2147483647 !important; position: absolute !important; top: 20px !important; right: 20px !important; overflow: hidden !important; border-width: 0px !important; visibility: visible !important;"><iframe class="abineContentFrame" width="310px" allowtransparency="true" frameborder="0" height="0px" scrolling="no" src="./Heart Disease Dataset (Comprehensive) _ IEEE DataPort_files/inlineForm.html" id="abine75251905doNotRemove" position="undefined" style="display:block !important;position:relative !important;background:transparent !important;border-width:0px !important;left:0px !important;top:0px !important;visibility:visible !important;opacity:1 !important;filter:alpha(opacity:100) !important;margin:0 !important;padding:0 !important;height:0px !important;width:310px"></iframe></div></html>

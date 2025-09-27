@@ -1,0 +1,8 @@
+1 run prediction Model
+2 run mongoDB
+3 run Nifi
+4 run Python Script
+
+data augmentation
+spark reads from kafka by spark streaming 
+make transformation in nifi
