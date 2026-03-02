@@ -1,21 +1,4 @@
-# Heart Disease Prediction Using Big Data & Data Warehousing & Machine Learning
-
-## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Project Goals](#project-goals)
-- [Technical Stack](#technical-stack)
-- [Repository Structure](#repository-structure)
-- [Key Components](#key-components)
-- [Data Description](#data-description)
-- [Machine Learning Models](#machine-learning-models)
-- [Data Pipeline](#data-pipeline)
-- [Installation & Setup](#installation--setup)
-- [Usage Guide](#usage-guide)
-- [File Descriptions](#file-descriptions)
-- [Directory Structure](#directory-structure)
-- [Future Enhancements](#future-enhancements)
-- [References](#references)
-- [Contact & Support](#contact--support)
+# Heart Attack Prediction Using Big Data & Machine Learning.
 
 ---
 
@@ -51,11 +34,4 @@ The system leverages a comprehensive heart disease dataset to train predictive m
 | **Data Format** | CSV, JSON |
 | **Environment** | Jupyter Notebooks (89.5% of codebase) |
 
-### Language Composition
-- **Jupyter Notebook**: 89.5%
-- **HTML**: 10.3%
-- **Python**: 0.2%
-
 ---
-
-## 📁 Repository Structure
