@@ -261,9 +261,3 @@ This project is intended for academic and educational use. Please review the rep
 ## Acknowledgment
 
 This project was built to explore how modern data and machine learning techniques can support heart disease prediction and improve healthcare decision-making.
-
-If you want, I can also do one of these next:
-1. rewrite the README in a more professional academic style
-2. rewrite it in a cleaner GitHub-ready format
-3. make it shorter and more concise for a public repo
-4. create a README in Arabic or bilingual English/Arabic format
